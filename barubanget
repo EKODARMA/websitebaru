@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Keren Anda</title>
+    <style>
+        /* Gaya Dasar / Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigasi */
+        nav {
+            background: #ffffff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #2563eb;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #4b5563;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .cta-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        /* Fitur / Layanan */
+        .features {
+            padding: 80px 10%;
+            background: #fff;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e293b;
+            color: #94a3b8;
+            text-align: center;
+            padding: 40px 10%;
+            font-size: 14px;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            nav { flex-direction: column; gap: 15px; text-align: center; }
+            nav ul li { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo">SitusKu</div>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Solusi Digital untuk Bisnis Anda</h1>
+        <p>Buat website landing page profesional dengan cepat, mudah, dan aman tanpa biaya hosting bulanan.</p>
+        <a href="https://wa.me" class="cta-btn" target="_blank">Hubungi Kami</a>
+    </section>
+
+    <!-- Fitur Section -->
+    <section class="features" id="fitur">
+        <h2>Mengapa Memilih Kami?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>⚡ Super Cepat</h3>
+                <p>Website dioptimalkan dengan CDN global Cloudflare sehingga loading sangat instan.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Sangat Aman</h3>
+                <p>Mendapatkan proteksi HTTPS/SSL gratis bawaan untuk keamanan data pengunjung.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Responsif</h3>
+                <p>Tampilan otomatis menyesuaikan rapi saat dibuka di HP, tablet, maupun komputer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <p>&copy; 2026 SitusKu. Dibuat gratis menggunakan GitHub & Cloudflare Pages.</p>
+    </footer>
+
+</body>
+</html>
